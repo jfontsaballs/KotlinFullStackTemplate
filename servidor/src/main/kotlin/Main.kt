@@ -25,11 +25,13 @@ fun main() {
                     }
                     body {
                         div {
-                            style = "display: flex; justify-content: center;"
+                            id = "root"
                             div {
-                                style = "margin: 10%; font-size: 48px;"
-                                id = "root"
-                                +"Loading..."
+                                style = "display: flex; justify-content: center;"
+                                p {
+                                    style = "margin: 10%; font-size: 48px;"
+                                    +"Loading..."
+                                }
                             }
                         }
                         script(src = "/client.js") { }
